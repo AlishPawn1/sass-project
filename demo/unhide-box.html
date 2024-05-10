@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Click Toggle Class</title>
+<style>
+    .slide-box {
+        display: none; /* initially hide */
+    }
+    .slide-box.active {
+        display: block; /* display when active */
+    }
+</style>
+</head>
+<body>
+
+<div class="search-cart-user fixed-btn">
+    <div class="side-btn">
+        <button class="search">
+            Search
+        </button>
+    </div>
+    <div class="side-btn">
+        <button class="user">
+            User
+        </button>
+    </div>
+    <div class="side-btn position-relative">
+        <button class="cart">
+            Cart
+        </button>
+    </div>
+</div>
+
+<div class="search-cart-user-box">
+    <div class="search-box slide-box">
+        <div class="card">
+            <div class="top-section">
+                <h4 class="heading">Search</h4>
+                <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="body-section">
+                <form action="">
+                    <div class="position-relative">
+                        <label for="search">Search</label>
+                        <input type="search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="user-box slide-box">
+        <div class="card">
+            <div class="top-section">
+                <h4 class="heading">User</h4>
+                <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="body-section">
+                <form action="">
+                    <div class="position-relative">
+                        <label for="search">User</label>
+                        <input type="search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cart-box slide-box">
+        <div class="card">
+            <div class="top-section">
+                <h4 class="heading">Cart</h4>
+                <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="body-section">
+                <form action="">
+                    <div class="position-relative">
+                        <label for="search">Cart</label>
+                        <input type="search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('.search-cart-user .side-btn button').click(function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    
+    $('.slide-box').removeClass('active');
+    
+    var index = $(this).closest('.side-btn').index();
+    $('.slide-box').eq(index).addClass('active');
+  });
+
+  $('.search-cart-user-box .icon').click(function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    $('.slide-box').removeClass('active');
+  });
+});
+</script>
+
+</body>
+</html>

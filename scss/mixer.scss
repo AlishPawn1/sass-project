@@ -1,0 +1,210 @@
+@mixin mainHeading($font-size: 60px, $font-weight: 600, $line-height: 90px){
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hovericon(
+  $black-color: #000,
+  $white-color: #fff,
+  $box-shadow-color: rgb(0, 0, 0),
+  $box-shadow: (
+    $box-shadow-color 0.8rem 0.8rem,
+    $box-shadow-color 0.8rem 0.8rem,
+    $box-shadow-color 0.8rem 0.8rem
+  ),
+  $hover-box-shadow: (
+    rgba($box-shadow-color, .8) 0.2rem 0.2rem,
+    rgba($box-shadow-color, .4) 0.5rem 0.5rem,
+    rgba($box-shadow-color, .2) 0.8rem 0.8rem
+  ),
+  $border: 1px solid $box-shadow-color,
+  $text-color: #000
+)
+{
+    .speical-btn{
+        border: $border;
+        padding: 0 32px;
+        height: 60px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        max-width: 347px;
+        min-width: 300px;
+        box-shadow: $box-shadow;
+        transition: $defult-transition;
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+
+        .btn-arrow{
+            width: 35px;
+            color:  $text-color;
+
+        }
+
+        &::after, &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: $black-color;
+            opacity: 0.1;
+            transition: all 0.3s linear;
+            z-index: -1 ;
+            width: 0;
+        }
+        &::after{
+            right: 0;
+            transition-delay: 0.3s;
+        }
+        &::before{
+            left: 0;
+        }
+        &:hover::after, &:hover::before{
+            width: 100%;
+        }
+        
+        .text{
+            color: $text-color;
+            display: block;
+            line-height: 18px;
+            &::after, &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                background-color: $black-color;
+                transition: all 0.3s linear;
+                z-index: 0 ;
+                width: 0;
+            }
+            &::after{
+                right: 0;
+                transition-delay: 0.5s;
+            }
+            &::before{
+                left: 0;
+                transition-delay: 0.5s;
+            }
+            // &:hover{
+            //     color: #fff;
+            //     position: relative;
+            // z-index: 1;
+            // }
+            
+        }
+        .btn-arrow{
+            transition: $defult-transition;
+        }
+        &:hover {
+            z-index: 1;
+            transition: $defult-transition;
+            span{
+                color: $white-color;
+                &::after, &::before{
+                    width: 100%;
+                    z-index: -1;
+                    // transition-delay: 100ms;
+                }
+            }
+            .btn-arrow{
+                // transform: translateX(10px);
+                color: $white-color;
+            }
+            svg{
+                animation: arrowBtn 0.9s infinite;
+            }
+            box-shadow: $hover-box-shadow;
+        }
+    }
+}
+@mixin iconcart(
+    $iconColor: #000,
+    $hover-iconColor: #fff,
+    $background-color: transparent,
+    $background-color-after: #000,
+    $box-shadow: #63636366,
+    $hover-box-shadow: #000,
+    $hover-box-shadow-opacity: rgba(0,0,0, .2) ,
+){
+    .cart_wishlist{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        // opacity: 0;
+        // transform: scale(0);
+        transition: $defult-transition;
+        z-index: 1;
+        
+        button{
+            $size: 40px;
+            border: none;
+            box-shadow: $box-shadow 0 2px 8px;
+            height: $size;
+            width: $size;
+            border-radius: 50%;
+            transition: $defult-transition;
+            background-color: $background-color;
+        }
+
+        i{
+            color: $iconColor;
+        }
+    
+        &:hover{
+    
+            button{
+                background-color: transparent;
+    
+                &::after{
+                    content: "";
+                    // z-index: -1;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background-color: $background-color-after;
+                    box-shadow: 0 0 4rem $hover-box-shadow, $hover-box-shadow-opacity;
+                    animation: animateIcon .6s infinite ease;
+                }
+            }
+            i{
+                color: $hover-iconColor;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        &.active{
+            button{
+                background-color: transparent;
+    
+                &::after{
+                    content: "";
+                    // z-index: -1;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background-color: $background-color-after;
+                    box-shadow: 0 0 4rem $hover-box-shadow, $hover-box-shadow-opacity;
+                    animation: animateIcon .6s infinite ease;
+                }
+            }
+            i{
+                color: $hover-iconColor;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}
