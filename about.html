@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <!-- <link rel="stylesheet" href="scss/stylescss.css"> -->
+    <link rel="stylesheet" href="stylescss.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="first-header d-flex justify-content-xl-end align-items-center overflow-hidden">
+            <div class="announcement-bar">
+                <div class="announcement-slide splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="d-flex gap-3 align-items-center justify-content-center">
+                                    <div class="announcement-logo">
+                                        <img src="image/Beauty_insider.webp" alt="">
+                                    </div>
+                                    <div class="announcement-message">
+                                        <p>Free shipping orders over $99.
+                                            <a href="#">shop now!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="d-flex gap-3 align-items-center justify-content-center">
+                                    <div class="announcement-logo">
+                                        <img src="image/Beauty_insider.webp" alt="">
+                                    </div>
+                                    <div class="announcement-message">
+                                        <p>Sale up to 50% off on selected items.
+                                            <a href="#">shop now!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="announcement-tab">
+                <a href="#">beauty</a>
+                <a href="#">skincare</a>
+            </div>
+        </div>
+        <div class="second-header">
+            <div class="container">
+                <ul class="primary-menu">
+                    <li>
+                        <a href="#" class="on-hover link-style-line">
+                            <span class="link-style">theme demo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="on-hover link-style-line">
+                            <span class="link-style">shops</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="on-hover link-style-line">
+                            <span class="link-style">products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="on-hover link-style-line">
+                            <span class="link-style">pages</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="about.html" class="link-style-line on-hover">
+                                    <span class="link-style">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="link-style-line on-hover">
+                                    <span class="link-style">contact</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="404.html" class="link-style-line on-hover">
+                                    <span class="link-style">404 page</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html" class="link-style-line on-hover">
+                                    <span class="link-style">FAQs page</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="on-hover link-style-line">
+                            <span class="link-style">blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="on-hover link-style-line">
+                            <span class="link-style">buy concept</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-logo">
+                    <a href="index.html"><img src="image/concept_1.webp" alt=""></a>
+                </div>
+                <div class="hidden-header-btn">
+                    <div class="side-btn">
+                        <button class="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-search" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true" focusable="false" role="presentation">
+                                <g clip-path="url(#clip0_4027_11396)">
+                                    <path d="M24 23.2448L17.296 16.5408C18.907 14.6067 19.7104 12.126 19.5389 9.61474C19.3675 7.10346 18.2345 4.75494 16.3756 3.05775C14.5168 1.36055 12.0751 0.445348 9.55864 0.502527C7.04217 0.559706 4.64462 1.58486 2.86474 3.36474C1.08486 5.14462 0.0597056 7.54217 0.00252659 10.0586C-0.0546525 12.5751 0.86055 15.0168 2.55775 16.8756C4.25494 18.7345 6.60346 19.8675 9.11474 20.0389C11.626 20.2104 14.1067 19.407 16.0408 17.796L22.7448 24.5L24 23.2448ZM1.80717 10.2966C1.80717 8.71643 2.27574 7.17176 3.15363 5.85791C4.03152 4.54405 5.2793 3.52003 6.73917 2.91533C8.19905 2.31063 9.80545 2.15241 11.3552 2.46069C12.905 2.76896 14.3286 3.52988 15.446 4.64722C16.5633 5.76456 17.3242 7.18814 17.6325 8.73793C17.9408 10.2877 17.7825 11.8941 17.1778 13.354C16.5731 14.8139 15.5491 16.0617 14.2353 16.9395C12.9214 17.8174 11.3767 18.286 9.79659 18.286C7.67838 18.2837 5.64761 17.4412 4.14981 15.9434C2.65201 14.4456 1.80952 12.4148 1.80717 10.2966Z" fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4027_11396">
+                                    <rect width="24" height="24" fill="currentColor" transform="translate(0 0.5)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="side-btn position-relative">
+                        <button class="cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart" aria-hidden="true" focusable="false" role="presentation" width="28" height="24" viewBox="0 0 28 24" fill="none">
+                                <path d="M14 8.33333H2L7.05263 23H20.9474L26 8.33333H14ZM14 8.33333V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="transparent"></path>
+                            </svg>
+                            <div class="cart-count">
+                                <span>0</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="side-btn">
+                        <button class="hamburger">
+                            <div class="bar">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
+                                    <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_921_737)">
+                                    <path d="M2.29804 20.906L2.29803 20.906L2.29683 20.9072C2.17091 21.0402 2.10156 21.2178 2.10313 21.4019C2.1047 21.5859 2.17707 21.7623 2.30525 21.893C2.43349 22.0238 2.60739 22.0984 2.7896 22.1C2.9718 22.1016 3.14697 22.0301 3.27744 21.9016L3.27745 21.9016L3.27866 21.9004L12.0172 12.9915L20.9274 21.7217L20.9278 21.7221C21.0267 21.8179 21.1512 21.882 21.2861 21.9061C21.4209 21.9303 21.5597 21.9133 21.6849 21.8574C21.8102 21.8015 21.9162 21.7094 21.9899 21.5928C22.0635 21.4762 22.1018 21.3402 22.0999 21.2019L22.0999 21.2014C22.0983 21.1091 22.0788 21.0181 22.0426 20.9334C22.0064 20.8487 21.9542 20.772 21.8887 20.7077L21.8886 20.7076L12.9951 11.9931L21.7146 3.10245C21.7789 3.03698 21.8298 2.95935 21.8645 2.87403C21.8992 2.78872 21.9171 2.69733 21.9172 2.60508C21.9172 2.51282 21.8995 2.42141 21.8649 2.33604C21.8303 2.25068 21.7795 2.17297 21.7153 2.10741C21.6511 2.04185 21.5747 1.98972 21.4906 1.95409C21.4064 1.91846 21.3161 1.90007 21.2248 1.9C21.1336 1.89993 21.0432 1.9182 20.959 1.95371C20.8748 1.98922 20.7983 2.04124 20.7341 2.10671L20.734 2.10676L11.9978 11.0157L3.09012 2.28909C3.02584 2.22157 2.94885 2.16773 2.86361 2.13086C2.77777 2.09373 2.6854 2.0746 2.59203 2.07467C2.49866 2.07474 2.40631 2.094 2.32053 2.13126C2.23475 2.16851 2.15735 2.22296 2.0929 2.29125C2.02845 2.35953 1.97827 2.44025 1.94524 2.52853C1.91222 2.61681 1.89701 2.71091 1.90048 2.80523C1.90395 2.89955 1.92603 2.99225 1.96546 3.0778C2.00463 3.16278 2.06015 3.23903 2.12884 3.302L11.0188 12.014L2.29804 20.906Z" fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_921_737">
+                                        <rect width="24" height="24" fill="white"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-bg"></div>
+    </header>
+    
+
+    <section class="single-banner faq-page bg-third">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" class="link-style-line on-hover" >
+                    <span class="link-style" >home</span>
+                </a>
+                <span>/</span>
+                <span>about us</span>
+            </div>
+            <h1 class="heading">About Us</h1>
+        </div>
+    </section>
+    <section class="about_full_img bg-third">
+        <div class="image">
+            <img src="image/banner-beauty-2.jpg" alt="">
+        </div>
+    </section>
+    <section class="our_description bg-third">
+        <div class="container">
+            <h3 class="heading"><strong>CONCEPT</strong> is the destination for all things home A place that helps everyone, antwhere, create their feeling of home</h3>
+        </div>
+    </section>
+    <section class="our_vision vis_miss_section bg-third">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="image image-hover">
+                        <img src="image/banner-beauty-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content">
+                        <h3 class="heading">our vision</h3>
+                        <p>Our vision is to produce and design the most meaningful, beautiful and affordable products by bringing together good products, people and value, bringing all the beautiful ideas for real life. The team supports each project with personalized guidance in order to help clients creating an entirely bespoke project or furniture pieces according to their needs and of course their budget.</p>
+                        <a href="#" class="link-style-line">
+                            <span class="link-style">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our_mission vis_miss_section bg-third">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="image image-hover">
+                        <img src="image/banner-beauty-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content">
+                        <h3 class="heading">our mission</h3>
+                        <p>Build a beautiful home - Build a beautiful planet. We respect our planet. We’re taking positive steps to reduce our impact on the planet. For us, that means retailing responsibly. We’ve set a number of goals to get us there. Things like: eliminating all unnecessary plastic from our product packaging, and ensuring that the most environmentally impactful materials we use are 100% sustainably sourced.</p>
+                        <a href="#" class="link-style-line">
+                            <span class="link-style">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_quotes bg-third">
+        <div class="container">
+            <div class="quotes_text">
+                <p>“When it comes to your home, we believe you can have it all: great design and quality, at an affordable price. We bring happiness and make your space alive with every design aspect and piece of furniture we create with love”</p>
+            </div>
+            <div class="quotes_detail">
+                <div class="quotes_info">
+                    <div class="avatar">
+                        <img src="image/avata-customer-2.webp" alt="">
+                    </div>
+                    <div class="info">
+                        <p><strong>Annie Lee</strong> - CEO, Founder at Concept</p>
+                    </div>
+                </div>
+                <div class="quotes_rating text-center">
+                    <div class="star-rating ">
+                        <?html 
+                            for($i=1; $i<=5; $i++){
+                                echo "<i class='fa fa-star'></i>";
+                            }
+                        ?>
+                    </div>
+                    <span class="total_star">5 out of 5</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="who_we_are we_are_do vis_miss_section bg-third">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <div class="content">
+                        <div class="">
+                            <h3 class="heading">Who We Are?</h3>
+                            <p>CONCEPT is the destination for all things home. A place that helps everyone, anywhere, create their feeling of home. We provide well-designed products and solutions for every room in your home. We give you the power to create spaces that are just right for you.</p>
+                            <p>Home is where we started, and it’s our number one priority. We’re experts at getting you the products you want most and are champions for your home needs.</p>
+                            <a href="#" class="link-style-line">
+                                <span class="link-style">Read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image image-hover">
+                        <img src="image/banner-beauty-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="what_we_do we_are_do vis_miss_section bg-third">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <div class="image image-hover">
+                        <img src="image/banner-beauty-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content">
+                        <div class="">
+                            <h3 class="heading">What We Do?</h3>
+                            <p>We have the perfect solutions to design and furnish a house, turning it into a genuine home. It manages complete and coordinated interior design projects for residential destinations by manufacturing high-quality furniture, designed and customized on request using specific fabrics, colors, finishes and most important within their client’s budget.</p>
+                            <a href="#" class="link-style-line">
+                                <span class="link-style">Read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="concept_community">
+        <div class="image">
+            <img src="image/banner-beauty-1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3 class="heading">The Concept Community</h3>
+            <p>This is where comfort and style meet to blissful perfection</p>
+            <a href="#" class="cart-button">
+                <span class="text">joint out community</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="fixed-icon overflow-hidden">
+        <div class="newsletter-btn fixed-btn">
+            <button>
+                <span>newsletter</span>
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+        </div>
+        <div class="search-cart-user fixed-btn">
+            <div class="side-btn">
+                <button class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-search" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true" focusable="false" role="presentation">
+                        <g clip-path="url(#clip0_4027_11396)">
+                            <path d="M24 23.2448L17.296 16.5408C18.907 14.6067 19.7104 12.126 19.5389 9.61474C19.3675 7.10346 18.2345 4.75494 16.3756 3.05775C14.5168 1.36055 12.0751 0.445348 9.55864 0.502527C7.04217 0.559706 4.64462 1.58486 2.86474 3.36474C1.08486 5.14462 0.0597056 7.54217 0.00252659 10.0586C-0.0546525 12.5751 0.86055 15.0168 2.55775 16.8756C4.25494 18.7345 6.60346 19.8675 9.11474 20.0389C11.626 20.2104 14.1067 19.407 16.0408 17.796L22.7448 24.5L24 23.2448ZM1.80717 10.2966C1.80717 8.71643 2.27574 7.17176 3.15363 5.85791C4.03152 4.54405 5.2793 3.52003 6.73917 2.91533C8.19905 2.31063 9.80545 2.15241 11.3552 2.46069C12.905 2.76896 14.3286 3.52988 15.446 4.64722C16.5633 5.76456 17.3242 7.18814 17.6325 8.73793C17.9408 10.2877 17.7825 11.8941 17.1778 13.354C16.5731 14.8139 15.5491 16.0617 14.2353 16.9395C12.9214 17.8174 11.3767 18.286 9.79659 18.286C7.67838 18.2837 5.64761 17.4412 4.14981 15.9434C2.65201 14.4456 1.80952 12.4148 1.80717 10.2966Z" fill="currentColor"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_4027_11396">
+                            <rect width="24" height="24" fill="currentColor" transform="translate(0 0.5)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </div>
+            <div class="side-btn">
+                <button class="user">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-user" viewBox="0 0 24 25" aria-hidden="true" focusable="false" role="presentation" fill="#000">
+                        <path d="M11.98 24.4984C8.2593 24.4984 4.53789 24.4984 0.817235 24.4984C0.736868 24.4984 0.655758 24.5 0.575392 24.4959C0.22565 24.4753 0.00241021 24.2222 0.000177815 23.8335C-0.00428698 22.9879 0.0753351 22.1514 0.2383 21.3263C0.681803 19.0854 1.6209 17.1336 3.07121 15.4893C4.4419 13.9345 6.08122 12.8752 7.97504 12.2975C8.83972 12.0337 9.72152 11.8834 10.6167 11.8776C11.7448 11.8702 12.8759 11.8472 14.001 11.922C16.2178 12.0699 18.1964 12.9517 19.928 14.4826C21.8568 16.187 23.1099 18.3778 23.7038 21.0256C23.8995 21.8991 23.9917 22.7891 23.9999 23.6897C24.0051 24.2288 23.7648 24.5 23.2736 24.5C19.5091 24.5 15.7445 24.5 11.9807 24.5L11.98 24.4984ZM12.003 23.2345C15.5124 23.2345 19.0209 23.2345 22.5303 23.2345C22.5861 23.2345 22.6419 23.2312 22.6977 23.2345C22.8071 23.2427 22.8614 23.2016 22.8421 23.0693C22.7535 22.4489 22.7074 21.8169 22.5742 21.208C22.2133 19.5653 21.5242 18.0959 20.5099 16.8279C18.66 14.5155 16.3339 13.2746 13.5389 13.1505C12.5983 13.1086 11.6548 13.1382 10.712 13.1398C9.63669 13.1415 8.59044 13.3453 7.57842 13.743C5.8818 14.4103 4.45306 15.5107 3.31454 17.0523C2.0458 18.7706 1.32176 20.7379 1.16549 22.9542C1.14614 23.2337 1.14912 23.2337 1.40138 23.2337C4.93526 23.2337 8.46914 23.2345 12.003 23.2345Z" fill="currentColor"></path>
+                        <path d="M17.9995 6.8141C18.0433 10.2511 15.3552 13.1167 12.0237 13.1315C8.63668 13.1463 6.02996 10.2602 6.00025 6.8807C5.97054 3.43379 8.61401 0.555062 11.883 0.500793C15.3099 0.444879 18.0221 3.35486 17.9995 6.8141ZM12.0057 11.8628C14.718 11.8365 16.8368 9.56785 16.8087 6.72036C16.7813 3.98142 14.5945 1.74487 11.9612 1.76378C9.3216 1.7827 7.1746 4.07433 7.19884 6.84781C7.22308 9.62705 9.38962 11.8883 12.0057 11.8628Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="side-btn position-relative">
+                <button class="cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart" aria-hidden="true" focusable="false" role="presentation" width="28" height="24" viewBox="0 0 28 24" fill="none">
+                        <path d="M14 8.33333H2L7.05263 23H20.9474L26 8.33333H14ZM14 8.33333V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="transparent"></path>
+                    </svg>
+                    <div class="cart-count">
+                        <span>0</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="search-cart-user-box">
+            <div class="search-box slide-box">
+                <div class="card">
+                    <div class="top-section">
+                        <h4 class="heading">Search</h4>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="body-section">
+                        <form action="">
+                            <div class="position-relative">
+                                <input class="form_input" type="search">
+                                <label class="form_label" for="search">Search</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="user-box slide-box">
+                <div class="card">
+                    <div class="top-section">
+                        <h4 class="heading"></h4>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="slide_header">
+                        <h4 class="heading">Customer login</h4>
+                        <p>If you are already registered, please log in.</p>
+                    </div>
+                    <div class="body-section">
+                        <form action="">
+                            <div class="position-relative mb-3">
+                                <input class="form_input" type="email">
+                                <label class="form_label" for="search">Email</label>
+                            </div>
+                            <div class="position-relative mb-3">
+                                <input class="form_input" type="password">
+                                <label class="form_label" for="search">password</label>
+                            </div>
+                            <div class="submit-btn item-btn mb-3">
+                                <button class="speical-btn">
+                                    <span class="text">Log in</span>
+                                </button>
+                            </div>
+                            <div class="forget-pw">
+                                <a href="#" class="line link-style-line">
+                                    <span class="link-style">Forgot your password</span>
+                                </a>
+                            </div>
+                        </form>
+                        <div class="create-ac">
+                            <p>Don't have an account? Create and enjoy a new shopping experience.</p>
+                            <div class="item-btn">
+                                <a href="#" class="speical-btn">
+                                    <span class="text">create a new account</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-box slide-box">
+                <div class="card">
+                    <div class="top-section">
+                        <h4 class="heading">Search</h4>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="body-section">
+                        <form action="">
+                            <div class="position-relative">
+                                <label for="search">Search</label>
+                                <input type="search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="overflow-hidden">
+        <div class="first-footer">
+            <div class="container">
+                <div class="row gy-md-5">
+                    <div class="col-lg-6">
+                        <div class="">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="image/concept_1.webp" alt=""></a>
+                            </div>
+                            <div class="contact-footer">
+                                <p><span>Email:</span><a href="#">sales@halothemes.com</a></p>
+                                <p><span>Phone:</span><a href="#">+1-(123)-456-CONCEPT</a></p>
+                                <p><span>685 Market Street,</span></p>
+                                <p><span>San Francisco, CA 94105</span></p>
+                            </div>
+                            <div class="social-link">
+                                <ul class="">
+                                    <li><span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span></li>
+                                    <li><span><a href="#"><i class="fa-brands fa-twitter"></i></a></span></li>
+                                    <li><span><a href="#"><i class="fa-brands fa-instagram"></i></a></span></li>
+                                    <li><span><a href="#"><i class="fa-brands fa-pinterest"></i></a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-detail">
+                            <h3 class="heading">shop</h3>
+                            <ul>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">skincare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">makeup</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">beauty tips</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">product reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">routine</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-detail">
+                            <h3 class="heading">further info</h3>
+                            <ul>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">about us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">contact us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">shipping & returns</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">privacy policy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">term of service</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4">
+                        <div class="footer-detail">
+                            <h3 class="heading">customer service</h3>
+                            <ul>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">search items</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">my account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">brands</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">lookbooks</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">FAQs</span>
+                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="line">
+                                        <span class="line-style">store locations</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-footer">
+            <div class="container">
+                <div class="">
+                    <p>© 2024, Concept Theme. Powered by <a href="#">Shopify</a></p>
+                </div>
+                <div class="footer-payment">
+                    <ul>
+                        <li>
+                        <svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/splide-auto-scroll.js"></script>
+    <script src="js/simpleParallax.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
